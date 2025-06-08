@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulseChainRamp - The Premier On-Ramp for PulseChain</title>
+    <meta name="description" content="Securely and quickly buy PulseChain (PLS) and other assets on the PulseChain network using your fiat currency.">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="PulseChainRamp - Premier On-Ramp for PulseChain">
+    <meta property="og:description" content="The easiest way to convert your fiat to crypto on the PulseChain network.">
+    <meta property="og:image" content="/images/pulsechainramp_og.png">
+    <meta property="og:url" content="https://www.pulsechainramp.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Styles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+
+    <!-- Favicon Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center px-4 pt-32 pb-12">
+        <h1 class="text-5xl font-bold mb-4">The Gateway to PulseChain</h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-8">Securely buy PulseChain (PLS) and other PRC-20 tokens directly with your currency. Fast, simple, and reliable.</p>
+        <a href="#ramp-widget" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 text-lg">Get Started</a>
+    </section>
+
+    <!-- Ramp Widget Section -->
+    <section id="ramp-widget" class="bg-gray-800 pt-12 pb-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-10">Buy Crypto on PulseChain</h2>
+
+            <!-- RAMP WIDGET CONTAINER -->
+            <div id="ramp-widget-container" class="max-w-xl mx-auto bg-gray-900 p-2 rounded-xl shadow-2xl">
+                <div class="iframe-container">
+                    <div id="loading-overlay" class="loading-overlay">
+                        <div class="loading-spinner"></div>
+                        <p class="mt-4">Loading Secure Widget...</p>
+                    </div>
+                    <iframe id="rampnow-iframe" class="rounded-lg" width="100%" height="650" frameborder="0" allow="camera; microphone" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+                </div>
+                <p class="text-center text-gray-400 mt-4 text-sm">Widget provided by our trusted partner, Rampnow.io.</p>
+            </div>
+            
+            <!-- --- START: MODIFIED FALLBACK SECTION (Always Visible) --- -->
+            <div id="alternative-options" class="max-w-2xl mx-auto text-center mt-16">
+                <h3 class="text-3xl font-bold text-purple-400 mb-4">Having Trouble? Alternative Options</h3>
+                <p class="text-gray-300 mb-6">If the service is not available in your region or you'd prefer another method, here are some alternatives the community uses to get PLS:</p>
+                
+                <div class="space-y-4 text-left">
+                    <div class="bg-gray-700 p-6 rounded-lg hover:bg-gray-600 transition">
+                        <h4 class="font-semibold text-xl text-white">1. Use a Crypto Bridge</h4>
+                        <p class="text-gray-300 mt-2 mb-3">If you already own crypto (like ETH, USDC, or DAI) on another network, you can "bridge" it over to the PulseChain network.</p>
+                        <a href="https://bridge.pulsechain.com/" target="_blank" rel="noopener noreferrer" class="font-bold text-purple-400 hover:text-purple-300">Official PulseChain Bridge →</a>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg hover:bg-gray-600 transition">
+                        <h4 class="font-semibold text-xl text-white">2. Use a Centralized Exchange</h4>
+                        <p class="text-gray-300 mt-2 mb-3">Buy a common crypto like Ethereum (ETH) on a major exchange, withdraw it to your own self-custody wallet (e.g., MetaMask), and then use the bridge mentioned above.</p>
+                         <a href="https://www.coinbase.com" target="_blank" rel="noopener noreferrer" class="font-medium text-purple-400 hover:text-purple-300">Visit Coinbase →</a><br>
+                         <a href="https://www.kraken.com" target="_blank" rel="noopener noreferrer" class="font-medium text-purple-400 hover:text-purple-300">Visit Kraken →</a>
+                    </div>
+                </div>
+
+                <p class="text-gray-500 text-xs mt-6">Note: These are links to third-party services. Please do your own research before using them.</p>
+            </div>
+            <!-- --- END: MODIFIED FALLBACK SECTION --- -->
+
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Three Simple Steps</h2>
+            <div class="grid md:grid-cols-3 gap-10 text-center">
+                <div class="feature-card">
+                    <div class="feature-icon">1</div>
+                    <h3 class="text-2xl font-semibold mb-2">Enter Amount</h3>
+                    <p class="text-gray-400">Choose how much you want to purchase and the cryptocurrency you want to receive.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">2</div>
+                    <h3 class="text-2xl font-semibold mb-2">Complete Purchase</h3>
+                    <p class="text-gray-400">Follow the secure steps to complete your payment and identity verification if required.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">3</div>
+                    <h3 class="text-2xl font-semibold mb-2">Receive Your Crypto</h3>
+                    <p class="text-gray-400">Your crypto is sent directly to your specified PulseChain wallet address.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is this service secure?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. All transactions are handled by our partner, Rampnow.io, which employs industry-standard security protocols to protect your funds and data. We never have access to your private information or funds.</p>
+                    </div>
+                </div>
+                 <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are the fees?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Fees are determined by Rampnow and their payment partners. They are displayed transparently within the widget before you confirm your purchase, so you always know the final cost.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Which cryptocurrencies can I buy?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can purchase PulseChain (PLS) and a variety of other popular assets available on the PulseChain network, as supported by the Rampnow widget.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<nav class="bg-gray-900 bg-opacity-80 backdrop-filter backdrop-blur-lg fixed w-full z-50 top-0 border-b border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-20">
+            <a href="/" class="flex items-center space-x-2">
+                <img src="/images/pulsechain-logo.png" alt="PulseChainRamp Logo" class="h-10" style="display: none">
+                <span class="text-2xl font-bold">PulseChain<span class="text-purple-400">Ramp</span></span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="/#ramp-widget" class="nav-link">Buy Crypto</a>
+                <a href="/disclaimer.html" class="nav-link">Disclaimer</a>
+                <a href="/terms.html" class="nav-link">Terms</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+        <a href="/#ramp-widget" class="block py-2 px-4 text-sm hover:bg-gray-700">Buy Crypto</a>
+        <a href="/disclaimer.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Disclaimer</a>
+        <a href="/terms.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Terms</a>
+    </div>
+</nav>
