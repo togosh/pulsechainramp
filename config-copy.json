@@ -1,0 +1,10 @@
+{
+  "debug": true,
+  "hostname": "your_domain.com",
+  "https": {
+    "cert": "./ssl/fullchain.pem",
+    "ca": "",
+    "key": "./ssl/privkey.pem"
+  },
+  "server_admin_email": "your_email@example.com"
+}
