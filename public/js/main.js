@@ -31,7 +31,7 @@ $(document).ready(function() {
             const rampURL = new URL('https://app.rampnow.io/order/quote');
             rampURL.searchParams.set('apiKey', apiKey);
             rampURL.searchParams.set('dstCurrency', 'PLS');
-            rampURL.searchParams.set('dstChain', 'pulsechain');
+            rampURL.searchParams.set('dstChain', 'pulse-chain');
             // --- START: CORRECTION ---
             rampURL.searchParams.set('orderType', 'buy'); // Corrected from search_params
             // --- END: CORRECTION ---
